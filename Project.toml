@@ -1,0 +1,4 @@
+name = "CSVpro"
+uuid = "89ad5da3-d510-4fd5-9e17-711d7f6e46b6"
+authors = ["bit-web24 <bitweb24@gmail.com>"]
+version = "0.1.0"
