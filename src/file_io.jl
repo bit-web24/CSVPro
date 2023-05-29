@@ -6,9 +6,9 @@ function read_csv(filename)
     df = CSV.File(filename) |> DataFrame
     
     # Convert columns to appropriate data types if needed
-    df.Name = parse.(String, df.Name)
-    df.Age = parse.(Int, df.Age)
-    df.City = parse.(String, df.City)
+    df.Name = String.(df.Name)
+    df.Age = Int.(df.Age)
+    df.City = String.(df.City)
     
     return df
 end

@@ -9,11 +9,11 @@ function main()
     args = parse_arguments()
 
     # Access the parsed arguments
-    csvfile = get_arg(args, "csvfile")
-    column = get_arg(args, "column")
-    value = get_arg(args, "value")
-    condition = get_arg(args, "condition")
-    output = get_arg(args, "output")
+    csvfile = args["file"]
+    column = args["column"]
+    value = args["value"]
+    condition = args["condition"]
+    output = args["output"]
 
     # Check if the CSV file is provided
     if isempty(csvfile)
@@ -39,7 +39,7 @@ function main()
     # Generate reports
     generate_report(filtered_data, stats, output)
 
-    println("CSVpro: CSV data processing complete!")
+    println("\nCSVpro: CSV data processing complete!")
 end
 
 # Entry point of the application
