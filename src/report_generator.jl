@@ -12,7 +12,7 @@ function generate_report(filtered_data, stats, output)
     end
     
     # Save the report to a file if specified
-    if output != nothing
+    if output !== nothing
         save_report(filtered_data, stats, output)
     end
 end
